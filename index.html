@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+   
+   <title>CSS-frameworks</title>
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+   <body>
+      <header class="header text-uppercase">
+         <nav class="navbar navbar-default navbar-fixed-top clearfix">
+            <div class="container">
+               <div class="row clearfix">
+                  <div class="navbar-header col-lg-2 col-md-12 col-xs-12">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                     </button>
+                     <img src="./image/logo.png" alt="REEN">
+                  </div>
+                  <div class="col-lg-10 col-md-12 col-xs-12">
+                     <nav id="navbar-collapse" class="navbar-collapse collapse clearfix">
+                        <ul class="nav navbar-nav clearfix">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">Portfolio</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Pages</a></li>
+                           <li><a href="#">Features</a></li>
+                           <li><a href="#">Mega Menu</a></li>
+                           <li><a href="#">Contact</a></li>   
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right clearfix">
+                            <!--<li><input type="text"></li> -->
+                           <li><a class="glyphicon glyphicon-search" href="#"></a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main class="main">
+         <div id="carousel-main" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+               <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+               <li data-target="#carousel-main" data-slide-to="1"></li>
+               <li data-target="#carousel-main" data-slide-to="2"></li>
+               <li data-target="#carousel-main" data-slide-to="3"></li>
+               <li data-target="#carousel-main" data-slide-to="4"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <ul class="carousel-inner" role="listbox">
+               <li class="item first-slide active">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-10 col-lg-offset-1">
+                           <div class="carousel-caption text-center first-item">
+                              <h2 class="text-uppercase">Made for designers</h2>
+                              <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
+                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <img class="slider-image" src="./image/slide-1.jpg" alt="first slide"> -->
+               </li>
+               <li class="item second-slide">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-9 col-lg-offset-3">
+                           <div class="carousel-caption text-right second-item">
+                              <h2 class="text-uppercase">Fresh and beautirful design</h2>
+                              <p>REEN is designed to showcase your talent and put your work in the forefront.<br>Professionally use of typography and layout that fits your content.</p>
+                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- <img class="slider-image" src="./image/slide-2.jpg" alt="second slide"> -->
+               </li>
+               <li class="item third-slide">
+                 <!--  <img class="slider-image" src="./image/slide-3.jpg" alt="third slide"> -->
+                  <div class="container">
+                     <div class="row">
+                        <div class="carousel-caption text-left third-item">
+                           <div class="col-lg-6 col-md-5">
+                              <h2 class="text-uppercase">Clean and</h2>
+                           </div>
+                           <div class="col-lg-8 col-md-8">
+                              <h2 class="text-uppercase">reusable code</h2>
+                              <div class="clearfix"></div>
+                              <p>The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
+                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item fourth-slide">
+                  <!-- <img class="slider-image" src="./image/slide-4.jpg" alt="fourth slide"> -->
+                  <div class="container">
+                     <div class="row">
+                        <div class="carousel-caption text-right fourth-item">
+                           <div class="col-lg-7 col-lg-offset-5">
+                              <h2 class="text-uppercase">Just focus on</h2>
+                           </div>
+                           <div class="col-lg-8 col-lg-offset-4">
+                              <h2 class="text-uppercase">your creativity</h2>
+                              <div class="clearfix"></div>
+                              <p>Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.</p>
+                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item fifth-slide">
+                  <!-- <img class="slider-image" src="./image/slide-5.jpg" alt="fifth slide"> -->
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                           <div class="carousel-caption text-center fifth-item">
+                              <h2 class="text-uppercase">Showcase<br>your content</h2>
+                              <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!</p>
+                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+           <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left control" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+           </a>
+           <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right control" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+           </a>
+         </div>
+         <div class="container">
+            <div class="row">
+               <section class="col-lg-10 col-lg-offset-1 text-center who-we-are">
+                  <h3>Beautiful. Clean. Responsive.</h3>
+                  <p>REEN is a high-quality solution for those who want a beautiful website in no time.<br>It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,<br>it doesn't matter. Your content will always looks its absolute best.</p>
+               </section>
+            </div>
+            <div class="row internals">
+               <div class="col-lg-1 glyphicon glyphicon-heart-empty text-right"></div>
+               <section class="col-lg-3 text-left">
+                  <h5>Passion</h5>
+                  <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+               </section>
+               <div class="col-lg-1 glyphicon glyphicon-thumbs-up text-right"></div>
+               <section class="col-lg-3 text-left">
+                  <h5>Creativity</h5>
+                  <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+               </section>
+               <div class="col-lg-1 glyphicon glyphicon-star-empty text-right"></div>
+               <section class="col-lg-3 text-left">
+                  <h5>Quality</h5>
+                  <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
+               </section>
+            </div>
+         </div>
+         <article class="latest-works text-center">
+            <div class="container">
+               <div class="row col-lg-12">
+                  <h3>Check out our latest works</h3>
+                  <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
+               </div>
+               <div class="row">
+                  <div class="col-lg-6">
+                  <figure class="big-work bg-success">
+                     <a href="#"><img src="./image/grand-motel.png" alt="Grand motel"></a>
+                     <figcaption>
+                        <h6><a href="#">Grand Motel gets an identity brushup</a></h6>
+                        <small>Identity</small>
+                     </figcaption>
+                  </figure>
+                  </div>
+                  <div  class="col-lg-6">
+                  <figure class="big-work bg-success">
+                     <a href="#"><img src="./image/fresh-branding.png" alt="Fresh branding"></a>
+                     <figcaption>
+                        <h6><a href="#">Fresh branding for a creative startup</a></h6>
+                        <small>Identity</small>
+                     </figcaption>
+                  </figure>
+                  </div>
+               </div>
+               <div class="row">
+                  <div id="carousel-bottom" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#carousel-bottom" data-slide-to="0"></li>
+                        <li data-target="#carousel-bottom" data-slide-to="1" class="active"></li>
+                        <li data-target="#carousel-bottom" data-slide-to="2"></li>
+                     </ol>
+                     <!-- Wrapper for slides -->
+                     <ul class="carousel-inner"" role="listbox"">
+                        <li class="item active">
+                           <div class="col-lg-3 col-xs-6">
+                              <figure class="work">
+                                 <a href="#" data-alt="Simpli Nota"><img src="./image/bottom-slider/bottom-image-1.png" alt="Simpli Nota"></a>
+                              </figure>
+                           </div>
+                           <div class="col-lg-3 col-xs-6">
+                              <figure class="work">
+                                 <a href="#" data-alt="PSD Mockup"><img src="./image/bottom-slider/bottom-image-2.png" alt="PSD Mockup"></a>
+                              </figure>
+                           </div>
+                           <div class="col-lg-3 col-xs-6">
+                              <figure class="work">
+                                  <a href="#" data-alt="Astor & Yancy"><img src="./image/bottom-slider/bottom-image-3.png" alt="Astor & Yancy"></a>
+                              </figure>
+                           </div>
+                           <div class="col-lg-3 col-xs-6">
+                              <figure class="work">
+                                  <a href="#" data-alt="Signwall"><img src="./image/bottom-slider/bottom-image-4.png" alt="Signwall"></a>
+                              </figure>
+                           </div>
+                        </li>
+                     </ul>
+                    <!-- Controls -->
+                     <a class="left carousel-control" href="#carousel-bottom" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left control" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="right carousel-control" href="#carousel-bottom" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right control" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </article>
+         <section class="get-in-touch text-center">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-8 col-lg-offset-2">
+                     <h3>Want to work with us?</h3>
+                     <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                     <a class="btn btn-success btn-sm text-uppercase" href="#" role="button">Get started now</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+      <footer class="footer">
+         <div class="container">
+            <div class="wrapper center-block">
+               <div class="footer__ending">
+                  
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+   </body>
+</html>
