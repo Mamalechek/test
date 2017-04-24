@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
    
    <title>CSS-frameworks</title>
    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
@@ -12,9 +13,9 @@
 </head>
    <body>
       <header class="header text-uppercase">
-         <nav class="navbar navbar-default navbar-fixed-top clearfix">
+         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
-               <div class="row clearfix">
+               <div class="row">
                   <div class="navbar-header col-lg-2 col-md-12 col-xs-12">
                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                        <span class="sr-only">Toggle navigation</span>
@@ -22,11 +23,11 @@
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                      </button>
-                     <img src="./image/logo.png" alt="REEN">
+                     <h1 class="replace-header text-hide"><a href="#">REEN<span></span></a></h1>
                   </div>
                   <div class="col-lg-10 col-md-12 col-xs-12">
                      <nav id="navbar-collapse" class="navbar-collapse collapse clearfix">
-                        <ul class="nav navbar-nav clearfix">
+                        <ul class="nav navbar-nav">
                            <li><a href="#">Home</a></li>
                            <li><a href="#">Portfolio</a></li>
                            <li><a href="#">Blog</a></li>
@@ -35,7 +36,7 @@
                            <li><a href="#">Mega Menu</a></li>
                            <li><a href="#">Contact</a></li>   
                         </ul>
-                        <ul class="nav navbar-nav navbar-right clearfix">
+                        <ul class="nav navbar-nav navbar-right">
                             <!--<li><input type="text"></li> -->
                            <li><a class="glyphicon glyphicon-search" href="#"></a></li>
                         </ul>
@@ -154,18 +155,18 @@
                </section>
             </div>
             <div class="row internals">
-               <div class="col-lg-1 glyphicon glyphicon-heart-empty text-right"></div>
-               <section class="col-lg-3 text-left">
+               <span class="col-lg-1 col-md-1 col-xs-1 glyphicon glyphicon-heart-empty text-right"></span>
+               <section class="col-lg-3 col-md-6 col-xs-12 text-left">
                   <h5>Passion</h5>
                   <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                </section>
-               <div class="col-lg-1 glyphicon glyphicon-thumbs-up text-right"></div>
-               <section class="col-lg-3 text-left">
+               <span class="col-lg-1 col-lg-offset-0 col-md-1 col-md-offset-5 col-xs-1 glyphicon glyphicon-thumbs-up text-right"></span>
+               <section class="col-lg-3 col-md-6 col-xs-12 text-left">
                   <h5>Creativity</h5>
                   <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                </section>
-               <div class="col-lg-1 glyphicon glyphicon-star-empty text-right"></div>
-               <section class="col-lg-3 text-left">
+               <span class="col-lg-1 col-md-1 col-xs-1 glyphicon glyphicon-star-empty text-right"></span>
+               <section class="col-lg-3 col-md-6 col-xs-12 text-left">
                   <h5>Quality</h5>
                   <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                </section>
@@ -178,19 +179,19 @@
                   <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
                </div>
                <div class="row">
-                  <div class="col-lg-6">
-                  <figure class="big-work bg-success">
-                     <a href="#"><img src="./image/grand-motel.png" alt="Grand motel"></a>
-                     <figcaption>
+                  <div class="col-lg-6 col-xs-12">
+                  <figure class="big-work bg-success thumbnail">
+                     <a href="#"><img class="img-responsive" style="width:100%;" src="./image/grand-motel.png" alt="Grand motel"></a>
+                     <figcaption class="center-block">
                         <h6><a href="#">Grand Motel gets an identity brushup</a></h6>
                         <small>Identity</small>
                      </figcaption>
                   </figure>
                   </div>
-                  <div  class="col-lg-6">
-                  <figure class="big-work bg-success">
-                     <a href="#"><img src="./image/fresh-branding.png" alt="Fresh branding"></a>
-                     <figcaption>
+                  <div  class="col-lg-6 col-xs-12">
+                  <figure class="big-work bg-success thumbnail">
+                     <a href="#"><img class="img-responsive" style="width:100%;" src="./image/fresh-branding.png" alt="Fresh branding"></a>
+                     <figcaption class="center-block">
                         <h6><a href="#">Fresh branding for a creative startup</a></h6>
                         <small>Identity</small>
                      </figcaption>
@@ -209,23 +210,23 @@
                      <ul class="carousel-inner"" role="listbox"">
                         <li class="item active">
                            <div class="col-lg-3 col-xs-6">
-                              <figure class="work">
-                                 <a href="#" data-alt="Simpli Nota"><img src="./image/bottom-slider/bottom-image-1.png" alt="Simpli Nota"></a>
+                              <figure class="work thumbnail">
+                                 <a href="#" data-alt="Simpli Nota"><img style="width:100%;" src="./image/bottom-slider/bottom-image-1.png" alt="Simpli Nota"></a>
                               </figure>
                            </div>
                            <div class="col-lg-3 col-xs-6">
-                              <figure class="work">
-                                 <a href="#" data-alt="PSD Mockup"><img src="./image/bottom-slider/bottom-image-2.png" alt="PSD Mockup"></a>
+                              <figure class="work thumbnail">
+                                 <a href="#" data-alt="PSD Mockup"><img style="width:100%;" src="./image/bottom-slider/bottom-image-2.png" alt="PSD Mockup"></a>
                               </figure>
                            </div>
                            <div class="col-lg-3 col-xs-6">
-                              <figure class="work">
-                                  <a href="#" data-alt="Astor & Yancy"><img src="./image/bottom-slider/bottom-image-3.png" alt="Astor & Yancy"></a>
+                              <figure class="work thumbnail">
+                                  <a href="#" data-alt="Astor & Yancy"><img style="width:100%;" src="./image/bottom-slider/bottom-image-3.png" alt="Astor & Yancy"></a>
                               </figure>
                            </div>
                            <div class="col-lg-3 col-xs-6">
-                              <figure class="work">
-                                  <a href="#" data-alt="Signwall"><img src="./image/bottom-slider/bottom-image-4.png" alt="Signwall"></a>
+                              <figure class="work thumbnail">
+                                  <a href="#" data-alt="Signwall"><img style="width:100%;" src="./image/bottom-slider/bottom-image-4.png" alt="Signwall"></a>
                               </figure>
                            </div>
                         </li>
@@ -249,22 +250,137 @@
                   <div class="col-lg-8 col-lg-offset-2">
                      <h3>Want to work with us?</h3>
                      <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-                     <a class="btn btn-success btn-sm text-uppercase" href="#" role="button">Get started now</a>
+                     <button type="button" class="btn btn-success button text-uppercase" data-toggle="modal" data-target="#getInTouchModal">Get in touch</button>
+                     
+                     <!-- Modal window -->
+                     <div class="modal fade" id="getInTouchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h3 class="modal-title" id="myModalLabel">Get in touch with REEN</h3>
+                           </div>
+                           <div class="modal-body">
+                              <h6>Feel free to get in touch with us in the following ways:</h6>
+                              <ul class="modal__get-in-touch">
+                                 <li>
+                                    <a class="map" href="#"><span class="glyphicon glyphicon-map-marker"></span>84 Street, City, State 24813</a>
+                                 </li>
+                                 <li>
+                                    <a class="phone" href="tel:001234567890"><span class="glyphicon glyphicon-phone"></span>+00 (123) 456 78 90</a>
+                                 </li>
+                                 <li>
+                                    <a class="mail" href="mailto:#"><span class="glyphicon glyphicon-envelope"></span>info@reen.com</a>
+                                 </li>
+                              </ul>
+                              <p><strong>You can also request a call</strong>. Our manager will contact you within 5 minutes. Please, enter your phone number in the field below and click the <span class="request"><em>"Request a call"</em></span> button:</p>
+                              <form class="form-horizontal">
+                                 <label class="h6" for="clientNumber">Enter your number:</label>
+                                 <input type="text" id="clientNumber" name="number" class="input-lg" placeholder="+(012)345-6789"></input>
+                              </form>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#requestAccepted">Request a call</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <!-- Modal window end -->
+
+                      <div class="modal fade" id="requestAccepted" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                       <div class="modal-dialog" role="document">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                             <h3 class="modal-title" id="myModalLabel">Call request accepted</h3>
+                           </div>
+                           <div class="modal-body">
+                           <p>Thank you for the request!</p>
+                          </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
                   </div>
                </div>
             </div>
          </section>
       </main>
       <footer class="footer">
-         <div class="container">
-            <div class="wrapper center-block">
-               <div class="footer__ending">
-                  
+         <div class="footer__upper-block">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3">
+                     <h6 class="text-uppercase">Who we are</h6>
+                     <a class="footer-logo" href="#"><img src="./image/footer/footer-logo.png" alt="logo"></a>
+                     <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                     <a class="more" href="#">More about us</a>
+                  </div>
+                  <div class="col-lg-3">
+                     <h6 class="text-uppercase">Latest works</h6>
+                     <figure class="footer__latest-works">
+                        <a href="#"><img src="./image/footer/footer-image-1.png" alt="work-1"></a>
+                        <a href="#"><img src="./image/footer/footer-image-2.png" alt="work-2"></a>
+                        <a href="#"><img src="./image/footer/footer-image-3.png" alt="work-3"></a>
+                        <a href="#"><img src="./image/footer/footer-image-4.png" alt="work-4"></a>
+                     </figure>
+                  </div>
+                  <div class="col-lg-3">
+                     <h6 class="text-uppercase">Get in touch</h6>
+                     <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+                     <address class="footer__get-in-touch">
+                        <a class="map" href="#"><span class="glyphicon glyphicon-map-marker"></span>84 Street, City, State 24813</a>
+                        <a class="phone" href="tel:001234567890"><span class="glyphicon glyphicon-phone"></span>+00 (123) 456 78 90</a>
+                        <a class="mail" href="mailto:#"><span class="glyphicon glyphicon-envelope"></span>info@reen.com</a>
+                     </address>
+                  </div>
+                  <div class="col-lg-3">
+                     <h6 class="text-uppercase">Free updates</h6>
+                     <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+                     <form class="subscribe-form">
+                        <div class="input-group">
+                           <input type="email" class="form-control" placeholder="Enter your email address">
+                           <button class="btn btn-xs btn-success text-uppercase subscribe-btn" type="button">Subscribe</button>
+                        </div>
+                     </form>
+                     <h1 class="text-hide">Custom heading</h1>
+               </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer__ending">
+            <div class="container">
+               <div class="row clearfix">
+                  <div class="col-lg-5">
+                     <p class="copyright">© 2014 REEN. All rights reserved.</p>
+                  </div>
+                  <div class="col-lg-6 pull-right">
+                     <nav>
+                        <ul class="footer-nav text-right list-inline">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">Portfolio</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Services</a></li>
+                           <li><a href="#">Contact</a></li>   
+                        </ul>
+                     </nav>
+                  </div>
                </div>
             </div>
          </div>
       </footer>
-      <script src="https://code.jquery.com/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
       <script src="./js/bootstrap.min.js"></script>
+      <script>
+         jQuery(function($){
+           $("#clientNumber").mask("+(999) 999-9999");
+         });
+      </script>
+      <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
    </body>
 </html>
