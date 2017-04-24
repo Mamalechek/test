@@ -326,7 +326,7 @@ html, body {
 }
 
 .big-work a::after {
-   height: 390px;
+   height: calc(100% - 112px);
    content: "+";
    padding: 30%;
    font-size: 34px;
