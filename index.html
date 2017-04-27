@@ -3,43 +3,51 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
+
    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+   <link rel="stylesheet" href="./css/font-awesome.min.css">
 
-   
-   <title>CSS-frameworks</title>
    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="./css/style.css">
+   <title>CSS-frameworks</title>
 </head>
    <body>
       <header class="header text-uppercase">
          <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                <div class="row">
-                  <div class="navbar-header col-lg-2 col-md-12 col-xs-12">
+                  <div class="navbar-header col-lg-2">
                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                       <span class="sr-only">Toggle navigation</span>
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                      </button>
-                     <h1 class="replace-header text-hide"><a href="#">REEN<span></span></a></h1>
+                     <a href="#" title="Main page"><img src="./image/logo.png" alt="REEN"></a>
                   </div>
-                  <div class="col-lg-10 col-md-12 col-xs-12">
+                  <div class="col-lg-10">
                      <nav id="navbar-collapse" class="navbar-collapse collapse clearfix">
-                        <ul class="nav navbar-nav">
-                           <li><a href="#">Home</a></li>
-                           <li><a href="#">Portfolio</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Pages</a></li>
-                           <li><a href="#">Features</a></li>
-                           <li><a href="#">Mega Menu</a></li>
-                           <li><a href="#">Contact</a></li>   
-                        </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                            <!--<li><input type="text"></li> -->
-                           <li><a class="glyphicon glyphicon-search" href="#"></a></li>
-                        </ul>
+                        <div class="row">
+                           <div class="col-lg-10">
+                              <ul class="nav navbar-nav">
+                                 <li><a href="#">Home</a></li>
+                                 <li><a href="#">Portfolio</a></li>
+                                 <li><a href="#">Blog</a></li>
+                                 <li><a href="#">Pages</a></li>
+                                 <li><a href="#">Features</a></li>
+                                 <li><a href="#">Mega Menu</a></li>
+                                 <li><a href="#">Contact</a></li>
+                              </ul>
+                           </div>
+                           <div class="col-lg-2 clearfix">
+                              <form class="input-group search-form">
+                                 <input type="text" id="search" class="form-control" placeholder="Search for...">
+                                 <span class="input-group-btn">
+                                   <button class="btn btn-sm icon-search" type="button"><i class="fa fa-search"></i></button>
+                              </span>
+                            </form>
+                           </div>
+                        </div>
                      </nav>
                   </div>
                </div>
@@ -47,7 +55,7 @@
          </nav>
       </header>
       <main class="main">
-         <div id="carousel-main" class="carousel slide" data-ride="carousel">
+         <div id="carousel-main" class="carousel slide center-block" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
                <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
@@ -55,82 +63,134 @@
                <li data-target="#carousel-main" data-slide-to="2"></li>
                <li data-target="#carousel-main" data-slide-to="3"></li>
                <li data-target="#carousel-main" data-slide-to="4"></li>
+               <li data-target="#carousel-main" data-slide-to="5"></li>
+               <li data-target="#carousel-main" data-slide-to="6"></li>
+               <li data-target="#carousel-main" data-slide-to="7"></li>
             </ol>
             <!-- Wrapper for slides -->
             <ul class="carousel-inner" role="listbox">
-               <li class="item first-slide active">
+               <li class="item active">
+                  <img class="slider-image" src="./image/main-slider/tiny/main-slide-1.jpg" alt="first slide">
                   <div class="container">
                      <div class="row">
-                        <div class="col-lg-10 col-lg-offset-1">
-                           <div class="carousel-caption text-center first-item">
+                        <div class="col-md-10 col-md-offset-1 first-caption">
+                           <div class="carousel-caption text-center">
                               <h2 class="text-uppercase">Made for designers</h2>
                               <p>Create your online portfolio in minutes with the professionally and lovingly designed REEN website template. Customize your site with versatile and easy to use features.</p>
-                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                              <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <!-- <img class="slider-image" src="./image/slide-1.jpg" alt="first slide"> -->
                </li>
-               <li class="item second-slide">
+               <li class="item">
+                  <img class="slider-image" src="./image/main-slider/tiny/main-slide-2.jpg" alt="second slide">
                   <div class="container">
                      <div class="row">
                         <div class="col-lg-9 col-lg-offset-3">
-                           <div class="carousel-caption text-right second-item">
+                           <div class="carousel-caption text-right second-section">
                               <h2 class="text-uppercase">Fresh and beautirful design</h2>
                               <p>REEN is designed to showcase your talent and put your work in the forefront.<br>Professionally use of typography and layout that fits your content.</p>
-                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                              <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <!-- <img class="slider-image" src="./image/slide-2.jpg" alt="second slide"> -->
                </li>
-               <li class="item third-slide">
-                 <!--  <img class="slider-image" src="./image/slide-3.jpg" alt="third slide"> -->
+               <li class="item">
+                  <img class="slider-image" src="./image/main-slider/tiny/main-slide-3.jpg" alt="third slide">
                   <div class="container">
                      <div class="row">
-                        <div class="carousel-caption text-left third-item">
-                           <div class="col-lg-6 col-md-5">
-                              <h2 class="text-uppercase">Clean and</h2>
-                           </div>
-                           <div class="col-lg-8 col-md-8">
-                              <h2 class="text-uppercase">reusable code</h2>
-                              <div class="clearfix"></div>
-                              <p>The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
-                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                        <div class="col-lg-12">
+                           <div class="carousel-caption text-left third-section">
+                              <div class="row">
+                                 <div class="col-md-6 col-sm-5">
+                                    <h2 class="text-uppercase">Clean and</h2>
+                                 </div>
+                                 <div class="col-md-8 col-sm-8">
+                                    <h2 class="text-uppercase">reusable code</h2>
+                                    <div class="clearfix"></div>
+                                    <p>The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
+                                    <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </li>
-               <li class="item fourth-slide">
-                  <!-- <img class="slider-image" src="./image/slide-4.jpg" alt="fourth slide"> -->
+               <li class="item">
+                  <img class="slider-image" src="./image/main-slider/tiny/main-slide-4.jpg" alt="fourth slide">
                   <div class="container">
                      <div class="row">
-                        <div class="carousel-caption text-right fourth-item">
-                           <div class="col-lg-7 col-lg-offset-5">
-                              <h2 class="text-uppercase">Just focus on</h2>
-                           </div>
-                           <div class="col-lg-8 col-lg-offset-4">
-                              <h2 class="text-uppercase">your creativity</h2>
-                              <div class="clearfix"></div>
-                              <p>Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.</p>
-                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                        <div class="col-lg-12">
+                           <div class="carousel-caption text-right fourth-section">
+                              <div class="row">
+                                 <div class="col-lg-7 col-lg-offset-5">
+                                    <h2 class="text-uppercase">Just focus on</h2>
+                                 </div>
+                                 <div class="col-lg-8 col-lg-offset-4">
+                                    <h2 class="text-uppercase">your creativity</h2>
+                                    <p>Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.</p>
+                                    <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </li>
-               <li class="item fifth-slide">
-                  <!-- <img class="slider-image" src="./image/slide-5.jpg" alt="fifth slide"> -->
+               <li class="item">
+                  <img class="slider-image" src="./image/main-slider/tiny/main-slide-5.jpg" alt="fifth slide">
                   <div class="container">
                      <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
-                           <div class="carousel-caption text-center fifth-item">
+                           <div class="carousel-caption text-center fifth-section">
                               <h2 class="text-uppercase">Showcase<br>your content</h2>
                               <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!</p>
-                              <a class="btn btn-success slider-button text-uppercase" href="#" role="button">Get started now</a>
+                              <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+                <li class="item">
+                  <img class="slider-image" src="./image/main-slider/tiny/slide-6.jpg" alt="sixth slide">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                           <div class="carousel-caption text-center fifth-section">
+                              <h2 class="text-uppercase">Showcase<br>your content</h2>
+                              <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!</p>
+                              <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+                <li class="item">
+                  <img class="slider-image" src="./image/main-slider/tiny/slide-7.jpg" alt="seventh slide">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                           <div class="carousel-caption text-center fifth-section">
+                              <h2 class="text-uppercase">Showcase<br>your content</h2>
+                              <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!</p>
+                              <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+                <li class="item">
+                  <img class="slider-image" src="./image/main-slider/tiny/slide-8.jpg" alt="eighth slide">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                           <div class="carousel-caption text-center fifth-section">
+                              <h2 class="text-uppercase">Showcase<br>your content</h2>
+                              <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you!</p>
+                              <a class="btn btn-success btn-lg text-uppercase" href="#" role="button">Get started now</a>
                            </div>
                         </div>
                      </div>
@@ -139,61 +199,61 @@
             </ul>
            <!-- Controls -->
             <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
-             <span class="glyphicon glyphicon-chevron-left control" aria-hidden="true"></span>
-             <span class="sr-only">Previous</span>
+             <span class=" icon-prev control"></span>
            </a>
            <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
-             <span class="glyphicon glyphicon-chevron-right control" aria-hidden="true"></span>
-             <span class="sr-only">Next</span>
+             <span class="icon-next control"></span>
            </a>
          </div>
          <div class="container">
             <div class="row">
                <section class="col-lg-10 col-lg-offset-1 text-center who-we-are">
                   <h3>Beautiful. Clean. Responsive.</h3>
-                  <p>REEN is a high-quality solution for those who want a beautiful website in no time.<br>It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,<br>it doesn't matter. Your content will always looks its absolute best.</p>
+                  <p class="lead">REEN is a high-quality solution for those who want a beautiful website in no time.<br>It's fully responsive and will adapt itself to any mobile device. iPad, iPhone, Android,<br>it doesn't matter. Your content will always looks its absolute best.</p>
                </section>
             </div>
             <div class="row internals">
-               <span class="col-lg-1 col-md-1 col-xs-1 glyphicon glyphicon-heart-empty text-right"></span>
+               <span class="col-lg-1 col-md-1 col-xs-1 text-right"><i class="fa fa-heart-o"></i></span>
                <section class="col-lg-3 col-md-6 col-xs-12 text-left">
-                  <h5>Passion</h5>
+                  <h4>Passion</h4>
                   <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                </section>
-               <span class="col-lg-1 col-lg-offset-0 col-md-1 col-md-offset-5 col-xs-1 glyphicon glyphicon-thumbs-up text-right"></span>
+               <span class="col-lg-1 col-lg-offset-0 col-md-1 col-md-offset-5 col-xs-1 text-right"><i class="fa fa-lightbulb-o"></i></span>
                <section class="col-lg-3 col-md-6 col-xs-12 text-left">
-                  <h5>Creativity</h5>
+                  <h4>Creativity</h4>
                   <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                </section>
-               <span class="col-lg-1 col-md-1 col-xs-1 glyphicon glyphicon-star-empty text-right"></span>
+               <span class="col-lg-1 col-md-1 col-xs-1 text-right"><i class="fa fa-star-o"></i></span>
                <section class="col-lg-3 col-md-6 col-xs-12 text-left">
-                  <h5>Quality</h5>
+                  <h4>Quality</h4>
                   <p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p>
                </section>
             </div>
          </div>
          <article class="latest-works text-center">
             <div class="container">
-               <div class="row col-lg-12">
-                  <h3>Check out our latest works</h3>
-                  <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
+               <div class="row">
+                  <div class="col-lg-10 col-lg-offset-1">
+                     <h3>Check out our latest works</h3>
+                     <p class="lead">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
+                  </div>
                </div>
                <div class="row">
                   <div class="col-lg-6 col-xs-12">
                   <figure class="big-work bg-success thumbnail">
-                     <a href="#"><img class="img-responsive" style="width:100%;" src="./image/grand-motel.png" alt="Grand motel"></a>
+                     <a class="big-work__image" href="#"><img class="img-responsive" style="width:100%;" src="./image/grand-motel.png" alt="Grand motel"></a>
                      <figcaption class="center-block">
-                        <h6><a href="#">Grand Motel gets an identity brushup</a></h6>
-                        <small>Identity</small>
+                        <h5><a href="#">Grand Motel gets an identity brushup</a></h5>
+                        <p class="small">Identity</p>
                      </figcaption>
                   </figure>
                   </div>
                   <div  class="col-lg-6 col-xs-12">
                   <figure class="big-work bg-success thumbnail">
-                     <a href="#"><img class="img-responsive" style="width:100%;" src="./image/fresh-branding.png" alt="Fresh branding"></a>
+                     <a class="big-work__image" href="#"><img class="img-responsive" style="width:100%;" src="./image/fresh-branding.png" alt="Fresh branding"></a>
                      <figcaption class="center-block">
-                        <h6><a href="#">Fresh branding for a creative startup</a></h6>
-                        <small>Identity</small>
+                        <h5><a href="#">Fresh branding for a creative startup</a></h5>
+                        <p class="small">Identity</p>
                      </figcaption>
                   </figure>
                   </div>
@@ -210,36 +270,70 @@
                      <ul class="carousel-inner"" role="listbox"">
                         <li class="item active">
                            <div class="col-lg-3 col-xs-6">
-                              <figure class="work thumbnail">
-                                 <a href="#" data-alt="Simpli Nota"><img style="width:100%;" src="./image/bottom-slider/bottom-image-1.png" alt="Simpli Nota"></a>
-                              </figure>
+                              <a href="#">
+                                 <figure class="work thumbnail">
+                                    <img style="width:100%;" src="./image/bottom-slider/bottom-image-1.png" alt="Simpli Nota">
+                                    <figcaption>
+                                       <div class="work-info">
+                                          <h6>Simpli Nota</h6>
+                                          <p class="small">Identity</p>
+                                       </div>
+                                    </figcaption>
+                                 </figure>
+                              </a>
                            </div>
                            <div class="col-lg-3 col-xs-6">
-                              <figure class="work thumbnail">
-                                 <a href="#" data-alt="PSD Mockup"><img style="width:100%;" src="./image/bottom-slider/bottom-image-2.png" alt="PSD Mockup"></a>
-                              </figure>
+                              <a href="#">
+                                 <figure class="work thumbnail">
+                                    <img style="width:100%;" src="./image/bottom-slider/bottom-image-2.png" alt="PSD Mockup">
+                                    <figcaption>
+                                       <div class="work-info">
+                                          <h6>PSD Mockup</h6>
+                                          <p class="small">Identity</p>
+                                       </div>
+                                    </figcaption>
+                                 </figure>
+                              </a>
                            </div>
                            <div class="col-lg-3 col-xs-6">
+                           <a href="#">
                               <figure class="work thumbnail">
-                                  <a href="#" data-alt="Astor & Yancy"><img style="width:100%;" src="./image/bottom-slider/bottom-image-3.png" alt="Astor & Yancy"></a>
+                                 <img style="width:100%;" src="./image/bottom-slider/bottom-image-3.png" alt="Astor & Yancy">
+                                 <figcaption>
+                                       <div class="work-info">
+                                          <h6>Astor &amp; Yancy</h6>
+                                          <p class="small">Identity</p>
+                                       </div>
+                                 </figcaption>
                               </figure>
+                           </a>
                            </div>
                            <div class="col-lg-3 col-xs-6">
+                              <a href="#">
                               <figure class="work thumbnail">
-                                  <a href="#" data-alt="Signwall"><img style="width:100%;" src="./image/bottom-slider/bottom-image-4.png" alt="Signwall"></a>
+                                 <img style="width:100%;" src="./image/bottom-slider/bottom-image-4.png" alt="Signwall">
+                                 <figcaption>
+                                       <div class="work-info">
+                                          <h6>Signwall</h6>
+                                          <p class="small">Identity</p>
+                                       </div>
+                                 </figcaption>
                               </figure>
+                              </a>
                            </div>
                         </li>
                      </ul>
                     <!-- Controls -->
-                     <a class="left carousel-control" href="#carousel-bottom" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left control" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                     </a>
-                     <a class="right carousel-control" href="#carousel-bottom" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right control" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                     </a>
+                     <div class="row">
+                        <div class="col-xs-2 col-xs-offset-5">
+                           <a class="left carousel-control" href="#carousel-bottom" role="button" data-slide="prev">
+                              <span class="icon-prev control" aria-hidden="true"></span>
+                           </a>
+                           <a class="right carousel-control pull-right" href="#carousel-bottom" role="button" data-slide="next">
+                              <span class="icon-next control" aria-hidden="true"></span>
+                           </a>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -249,39 +343,48 @@
                <div class="row">
                   <div class="col-lg-8 col-lg-offset-2">
                      <h3>Want to work with us?</h3>
-                     <p>Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-                     <button type="button" class="btn btn-success button text-uppercase" data-toggle="modal" data-target="#getInTouchModal">Get in touch</button>
-                     
+                     <p class="lead">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                     <button type="button" class="btn btn-success btn-sm button text-uppercase" data-toggle="modal" data-target="#getInTouchModal">Get in touch</button>
+
                      <!-- Modal window -->
                      <div class="modal fade" id="getInTouchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                        <div class="modal-dialog" role="document">
                          <div class="modal-content">
                            <div class="modal-header">
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                             <h3 class="modal-title" id="myModalLabel">Get in touch with REEN</h3>
+                             <h3 class="modal-title" id="myModalLabel">Get in touch</h3>
                            </div>
                            <div class="modal-body">
-                              <h6>Feel free to get in touch with us in the following ways:</h6>
+                              <h5>Feel free to get in touch with us in the following ways:</h5>
                               <ul class="modal__get-in-touch">
                                  <li>
-                                    <a class="map" href="#"><span class="glyphicon glyphicon-map-marker"></span>84 Street, City, State 24813</a>
+                                    <a class="map" href="#">84 Street, City, State 24813</a>
                                  </li>
                                  <li>
-                                    <a class="phone" href="tel:001234567890"><span class="glyphicon glyphicon-phone"></span>+00 (123) 456 78 90</a>
+                                    <a class="phone" href="tel:001234567890">+00 (123) 456 78 90</a>
                                  </li>
                                  <li>
-                                    <a class="mail" href="mailto:#"><span class="glyphicon glyphicon-envelope"></span>info@reen.com</a>
+                                    <a class="mail" href="mailto:#">info@reen.com</a>
                                  </li>
                               </ul>
-                              <p><strong>You can also request a call</strong>. Our manager will contact you within 5 minutes. Please, enter your phone number in the field below and click the <span class="request"><em>"Request a call"</em></span> button:</p>
-                              <form class="form-horizontal">
-                                 <label class="h6" for="clientNumber">Enter your number:</label>
-                                 <input type="text" id="clientNumber" name="number" class="input-lg" placeholder="+(012)345-6789"></input>
+                              <p><strong>You can also request a call</strong>. Our manager will contact you within 5 minutes. Please enter your contact information in the fields below and click the <span class="request-span"><em>"Request a call"</em></span> button:</p>
+                              <h5 class="request-header">Request a call:</h5>
+                              <form class="form-horizontal modal-form">
+                                 <div class="row">
+                                    <div class="col-sm-7">
+                                       <input type="text" class="form-control" id="clientName" name="name" placeholder="Please enter your name"></input>
+                                    </div>
+                                 </div>
+                                 <div class="row">
+                                    <div class="col-sm-7">
+                                       <input type="text" class="form-control" id="clientNumber" name="number" placeholder="Please enter your number"></input>
+                                    </div>
+                                 </div>
+                                 <button type="submit" class="btn btn-success btn-xs text-uppercase" data-dismiss="modal" data-toggle="modal" data-target="#requestAccepted">Request a call</button>
                               </form>
                            </div>
                            <div class="modal-footer">
-                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                             <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#requestAccepted">Request a call</button>
+                              <button type="button" class="btn btn-default btn-xs text-uppercase" data-dismiss="modal">Close</button>
                            </div>
                          </div>
                        </div>
@@ -293,13 +396,13 @@
                          <div class="modal-content">
                            <div class="modal-header">
                              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                             <h3 class="modal-title" id="myModalLabel">Call request accepted</h3>
+                             <h3 class="modal-title text-left" id="myModalLabel">Call request accepted</h3>
                            </div>
                            <div class="modal-body">
-                           <p>Thank you for the request!</p>
+                           <h5 class="text-center">Thank you for the request!</h5>
                           </div>
                            <div class="modal-footer">
-                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                             <button type="button" class="btn btn-default btn-xs" data-dismiss="modal">Close</button>
                            </div>
                          </div>
                        </div>
@@ -313,13 +416,13 @@
          <div class="footer__upper-block">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6">
                      <h6 class="text-uppercase">Who we are</h6>
-                     <a class="footer-logo" href="#"><img src="./image/footer/footer-logo.png" alt="logo"></a>
-                     <p>Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+                     <a class="footer-logo" href="index.html"><img src="./image/footer/footer-logo.png" alt="logo"></a>
+                     <p class="small">Magnis modipsae voloratati andigen daepeditem quiate re porem que aut labor. Laceaque eictemperum quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
                      <a class="more" href="#">More about us</a>
                   </div>
-                  <div class="col-lg-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6">
                      <h6 class="text-uppercase">Latest works</h6>
                      <figure class="footer__latest-works">
                         <a href="#"><img src="./image/footer/footer-image-1.png" alt="work-1"></a>
@@ -328,21 +431,21 @@
                         <a href="#"><img src="./image/footer/footer-image-4.png" alt="work-4"></a>
                      </figure>
                   </div>
-                  <div class="col-lg-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6">
                      <h6 class="text-uppercase">Get in touch</h6>
-                     <p>Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+                     <p class="small">Doloreiur quia commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
                      <address class="footer__get-in-touch">
-                        <a class="map" href="#"><span class="glyphicon glyphicon-map-marker"></span>84 Street, City, State 24813</a>
-                        <a class="phone" href="tel:001234567890"><span class="glyphicon glyphicon-phone"></span>+00 (123) 456 78 90</a>
-                        <a class="mail" href="mailto:#"><span class="glyphicon glyphicon-envelope"></span>info@reen.com</a>
+                        <a class="map" href="#">84 Street, City, State 24813</a>
+                        <a class="phone" href="tel:001234567890">+00 (123) 456 78 90</a>
+                        <a class="mail" href="mailto:#">info@reen.com</a>
                      </address>
                   </div>
-                  <div class="col-lg-3 col-sm-3">
+                  <div class="col-md-3 col-sm-6">
                      <h6 class="text-uppercase">Free updates</h6>
-                     <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+                     <p class="small">Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
                      <form class="subscribe-form">
                         <div class="input-group">
-                           <input type="email" class="form-control" placeholder="Enter your email address">
+                           <input type="email" class="subscribe-input" placeholder="Enter your email address">
                            <button class="btn btn-xs btn-success text-uppercase subscribe-btn" type="button">Subscribe</button>
                         </div>
                      </form>
@@ -354,18 +457,18 @@
          <div class="footer__ending">
             <div class="container">
                <div class="row clearfix">
-                  <div class="col-lg-5 col-sm-4 col-xs-4">
+                  <div class="col-md-5 col-sm-4 col-xs-4">
                      <p class="copyright">© 2014 REEN. All rights reserved.</p>
                   </div>
-                  <div class="col-lg-6 col-sm-8 col-xs-8 pull-right">
+                  <div class="col-md-7 pull-right">
                      <nav>
-                        <ul class="footer-nav text-right list-inline">
+                        <ul class="breadcrumb text-right">
                            <li><a href="#">Home</a></li>
                            <li><a href="#">Portfolio</a></li>
                            <li><a href="#">Blog</a></li>
                            <li><a href="#">About</a></li>
                            <li><a href="#">Services</a></li>
-                           <li><a href="#">Contact</a></li>   
+                           <li><a href="#">Contact</a></li>
                         </ul>
                      </nav>
                   </div>
@@ -378,7 +481,21 @@
       <script src="./js/bootstrap.min.js"></script>
       <script>
          jQuery(function($){
-           $("#clientNumber").mask("+(999) 999-9999");
+            $("#clientNumber").mask("+(999) 999-9999");
+            $(".carousel").on("touchstart", function (event) {
+               let xClick = event.originalEvent.touches[0].pageX;
+               $(this).one("touchmove", function (event) {
+                  let xMove = event.originalEvent.touches[0].pageX;
+                  if (Math.floor(xClick - xMove) > 5) {
+                     $(".carousel").carousel('next');
+                  } else if (Math.floor(xClick - xMove) < -5) {
+                     $(".carousel").carousel('prev');
+                  }
+               });
+               $(".carousel").on("touchend", function () {
+                  $(this).off("touchmove");
+               });
+            });
          });
       </script>
       <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
